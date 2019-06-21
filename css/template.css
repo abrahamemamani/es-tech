@@ -1,1 +1,7 @@
-:root{--first-font: 'Poppins', sans-serif;--first-color: #FE9D24;--second-color: #0D66D0}figure{margin:0}
+:root {
+  --first-font: 'Poppins', sans-serif;
+  --first-color: #FE9D24;
+  --second-color: #0D66D0; }
+
+figure {
+  margin: 0; }
