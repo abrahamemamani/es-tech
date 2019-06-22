@@ -3,21 +3,17 @@
     --radius    : 1200px;
     --size      : 100%;
     position: relative;
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-    background : radial-gradient(circle var(--radius) at 90% 0, rgba($second-color, .4) 50%, #fff 50%),
+    padding-top: 11.5rem;
+    padding-bottom: 11.5rem;
+    background : radial-gradient(circle var(--radius) at 90% 10%, rgba($second-color, .4) 50%, #fff 50%),
                  var(--image) no-repeat right / auto var(--size);
 
     &__title{
         position: relative;
-        color: var(--color);
+        color: var(--dark);
         font: {
             size: 3.5em;
             weight: bold;
-        }
-        &::selection{
-            color: #fff;
-            background-color: var(--color);
         }
         &::after{
             content: '';
@@ -26,6 +22,13 @@
             left: 0;
             height: 4px;
             width: 15%;
+            background-color: var(--color);
+        }
+        &-alt{
+            color: var(--color);
+        }
+        &::selection, &-alt::selection{
+            color: #fff;
             background-color: var(--color);
         }
     }
@@ -37,7 +40,7 @@
     }
     &__description--bold{
         font-weight: bold;
-        color: lighten(#9A9A9A, 10%);
+        color: var(--gray);
         margin-top: 2.5em;
     }
     &__brand-container{

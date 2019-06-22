@@ -1,7 +1,8 @@
 // ### Utilidades reutilizables (variables, animaciones/efectos) ###
 
 // Breakpoints
-$small  : 576px;
-$medium : 768px;
-$large  : 992px;
-$xlarge : 1200px;
+$breakpoint-xs : 0;
+$breakpoint-sm : 576px;
+$breakpoint-md : 768px;
+$breakpoint-lg : 992px;
+$breakpoint-xl : 1200px;

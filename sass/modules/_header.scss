@@ -3,8 +3,22 @@
     &__bar-top{
         padding: 7px 0;
         border-bottom: 1px solid #f6f6f6;
+        &-email{
+            padding-right: 1.5em;
+            border-right: 1px solid darken(#f6f6f6, 10%);
+            .is-icon{
+                color: var(--color);
+                font-size: 1.1rem;
+                margin-right: .2em;
+            }
+        }
         &-lang{
+            margin-left: 1.5em;
             cursor: pointer;
+            .is-icon{
+                font-size: 1.1rem;
+                margin-left: .2em;
+            }
         }
     }
 }

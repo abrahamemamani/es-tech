@@ -24,8 +24,19 @@ ul {
   .app-header__bar-top {
     padding: 7px 0;
     border-bottom: 1px solid #f6f6f6; }
+    .app-header__bar-top-email {
+      padding-right: 1.5em;
+      border-right: 1px solid #dddddd; }
+      .app-header__bar-top-email .is-icon {
+        color: var(--color);
+        font-size: 1.1rem;
+        margin-right: .2em; }
     .app-header__bar-top-lang {
+      margin-left: 1.5em;
       cursor: pointer; }
+      .app-header__bar-top-lang .is-icon {
+        font-size: 1.1rem;
+        margin-left: .2em; }
 
 .social-links__item {
   list-style: none;
@@ -51,17 +62,14 @@ ul {
   --radius: 1200px;
   --size: 100%;
   position: relative;
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-  background: radial-gradient(circle var(--radius) at 90% 0, rgba(13, 102, 208, 0.4) 50%, #fff 50%), var(--image) no-repeat right/auto var(--size); }
+  padding-top: 11.5rem;
+  padding-bottom: 11.5rem;
+  background: radial-gradient(circle var(--radius) at 90% 10%, rgba(13, 102, 208, 0.4) 50%, #fff 50%), var(--image) no-repeat right/auto var(--size); }
   .app-banner__title {
     position: relative;
-    color: var(--color);
+    color: var(--dark);
     font-size: 3.5em;
     font-weight: bold; }
-    .app-banner__title::selection {
-      color: #fff;
-      background-color: var(--color); }
     .app-banner__title::after {
       content: '';
       position: absolute;
@@ -70,13 +78,18 @@ ul {
       height: 4px;
       width: 15%;
       background-color: var(--color); }
+    .app-banner__title-alt {
+      color: var(--color); }
+    .app-banner__title::selection, .app-banner__title-alt::selection {
+      color: #fff;
+      background-color: var(--color); }
   .app-banner__description, .app-banner__description--bold {
     margin-left: 2em; }
   .app-banner__description {
     margin-bottom: 2em; }
   .app-banner__description--bold {
     font-weight: bold;
-    color: #b4b4b4;
+    color: var(--gray);
     margin-top: 2.5em; }
   .app-banner__brand-container {
     position: absolute;
