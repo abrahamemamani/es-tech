@@ -5,3 +5,13 @@
     --first-color   : #FE9D24;
     --second-color  : #0D66D0;
 }
+
+$first-color : #FE9D24;
+$second-color: #0D66D0;
+
+.first-color{
+    --color : var(--first-color);
+}
+.second-color{
+    --color : var(--second-color);
+}

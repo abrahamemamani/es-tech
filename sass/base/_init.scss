@@ -1,5 +1,12 @@
 // ### Inicializa estilos de etiquetas ###
 
+body {
+    font-family: var(--first-font);
+}
 figure{
     margin: 0;
+}
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
 }

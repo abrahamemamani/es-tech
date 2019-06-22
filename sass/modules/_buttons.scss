@@ -1,0 +1,31 @@
+.m-btn{
+    font: {
+        weight: 300;
+        size: 1rem;
+    }
+    text: {
+        align: center;
+        decoration: none;
+    }
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn-curve{
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    color: var(--color);
+    border: 2px solid var(--color);
+    background-color: transparent;
+    transition: all .25s ease;
+    &:hover{
+        color: #fff;
+        background-color: var(--color);
+    }
+}

@@ -1,0 +1,32 @@
+.app-header{
+    background-color: #fff;
+    &__bar-top{
+        padding: 7px 0;
+        border-bottom: 1px solid #f6f6f6;
+        &-lang{
+            cursor: pointer;
+        }
+    }
+}
+
+.social-links{
+    &__item{
+        list-style: none;
+        margin-right: 8px;
+    }
+    &__link{
+        text-decoration: none;
+    }
+    & .is-icon{
+        display: inline-block;
+        font-size: 1.2em;
+        background-color: var(--color);
+        color: #fff;
+        padding: 5px;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        line-height: 27px;
+    }
+}

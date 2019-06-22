@@ -3,5 +3,110 @@
   --first-color: #FE9D24;
   --second-color: #0D66D0; }
 
+.first-color {
+  --color: var(--first-color); }
+
+.second-color {
+  --color: var(--second-color); }
+
+body {
+  font-family: var(--first-font); }
+
 figure {
   margin: 0; }
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+.app-header {
+  background-color: #fff; }
+  .app-header__bar-top {
+    padding: 7px 0;
+    border-bottom: 1px solid #f6f6f6; }
+    .app-header__bar-top-lang {
+      cursor: pointer; }
+
+.social-links__item {
+  list-style: none;
+  margin-right: 8px; }
+
+.social-links__link {
+  text-decoration: none; }
+
+.social-links .is-icon {
+  display: inline-block;
+  font-size: 1.2em;
+  background-color: var(--color);
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 27px; }
+
+.app-banner {
+  --image: url(../images/banner.jpg);
+  --radius: 1200px;
+  --size: 100%;
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  background: radial-gradient(circle var(--radius) at 90% 0, rgba(13, 102, 208, 0.4) 50%, #fff 50%), var(--image) no-repeat right/auto var(--size); }
+  .app-banner__title {
+    position: relative;
+    color: var(--color);
+    font-size: 3.5em;
+    font-weight: bold; }
+    .app-banner__title::selection {
+      color: #fff;
+      background-color: var(--color); }
+    .app-banner__title::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      height: 4px;
+      width: 15%;
+      background-color: var(--color); }
+  .app-banner__description, .app-banner__description--bold {
+    margin-left: 2em; }
+  .app-banner__description {
+    margin-bottom: 2em; }
+  .app-banner__description--bold {
+    font-weight: bold;
+    color: #b4b4b4;
+    margin-top: 2.5em; }
+  .app-banner__brand-container {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%; }
+  .app-banner__brand {
+    height: 85px; }
+
+.m-btn {
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer; }
+
+.btn-curve {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  color: var(--color);
+  border: 2px solid var(--color);
+  background-color: transparent;
+  transition: all .25s ease; }
+  .btn-curve:hover {
+    color: #fff;
+    background-color: var(--color); }
